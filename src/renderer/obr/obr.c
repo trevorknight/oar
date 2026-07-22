@@ -23,6 +23,8 @@
 
 #include "clog.h"
 #include "definitions.h"
+#include "oar_base.h"
+#include "oar_metadata.h"
 #include "obr_capi/obr_capi.h"
 #include "renderer_library_api.h"
 

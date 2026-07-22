@@ -141,6 +141,7 @@ static int _open(renderer_library_context_t *ctx) {
 
 static int _set_attribute(renderer_library_context_t *ctx,
                           rendering_attribute_t attr, const void *value) {
+  if (!obr) return ck_oar_error_inval;
   obr_renderer_t *obr = ctx->renderer;
   switch (attr) {
     case ck_attribute_head_tracking:
